@@ -1,11 +1,11 @@
-<project name="HelloWorld" basedir="." default="jar">
+<project name="HelloWorld" basedir="." default="compile">
     <target name="clean">
         <delete dir="build"/>
     </target>
 
     <target name="compile" depends="clean">
         <mkdir dir="build/classes"/>
-        <javac srcdir="src" destdir="build/classes"/>
+        <!--javac srcdir="src" destdir="build/classes"/-->
     </target>
 
     <target name="jar" depends="compile">
